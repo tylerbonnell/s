@@ -3,7 +3,12 @@ window.onload = function() {
   var url = "http://sphp-tylerbonnell.rhcloud.com/?redirect=" + addr;
   var ajax = new XMLHttpRequest();
   ajax.onload = function() {
-    window.location.href = this.responseText;
+    txt = this.responseText;
+    if (txt == "invalid url") {
+      window.location.href = "/";
+    } else {
+      window.location.href = txt;
+    }
   };
   ajax.open("GET", url, true);
   ajax.send();
