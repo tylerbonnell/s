@@ -6,9 +6,9 @@ window.onload = function() {
     txt = this.responseText;
     console.log(txt);
     if (txt == "invalid url") {
-      window.location.replace("http://bonn.pw/s");
+      window.location.href = "http://bonn.pw/s/";
     } else {
-      window.location.replace(txt);
+      window.location.href = txt;
     }
   };
   ajax.open("GET", url, true);
