@@ -10,3 +10,14 @@ body {
   font-size: 80pt;
   color: white;
 }
+
+#shorten {
+  background-color: lightgrey;
+  border: 1px solid lightgrey;
+}
+
+.input-group, #shortened {
+  width: 20%;
+  margin: auto;
+  margin-bottom: 10pt;
+}
