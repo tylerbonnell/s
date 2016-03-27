@@ -14,6 +14,7 @@ function getFromServer() {
   var url = "http://sphp-tylerbonnell.rhcloud.com/?url=" + encodeURIComponent($("input").value);
   var ajax = new XMLHttpRequest();
   ajax.onload = function() {
+    $("shortened").style.display = "";
     $("shortened").innerHTML = this.responseText;
   };
   ajax.open("GET", url, true);
