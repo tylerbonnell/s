@@ -1,0 +1,12 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: cornflowerblue;
+}
+
+#name {
+  margin: 0;
+  margin-top: 10%;
+  font-size: 80pt;
+  color: white;
+}
