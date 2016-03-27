@@ -5,11 +5,11 @@ window.onload = function() {
   ajax.onload = function() {
     txt = this.responseText;
     console.log(txt);
-    /*if (txt == "invalid url") {
-      window.location.href = "http://bonn.pw/s";
+    if (txt == "invalid url") {
+      window.location.replace("http://bonn.pw/s");
     } else {
-      window.location.href = txt;
-    }*/
+      window.location.replace(txt);
+    }
   };
   ajax.open("GET", url, true);
   ajax.send();
