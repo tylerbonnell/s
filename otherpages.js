@@ -5,7 +5,7 @@ window.onload = function() {
   ajax.onload = function() {
     txt = this.responseText;
     if (txt == "invalid url") {
-      window.location.href = "/";
+      window.location.href = "http://bonn.pw/s";
     } else {
       window.location.href = txt;
     }
