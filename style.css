@@ -39,3 +39,6 @@ body {
 div a {
   color: cornflowerblue;
 }
+div a:hover {
+  text-decoration: none;
+}
