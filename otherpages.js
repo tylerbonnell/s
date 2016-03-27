@@ -4,11 +4,12 @@ window.onload = function() {
   var ajax = new XMLHttpRequest();
   ajax.onload = function() {
     txt = this.responseText;
-    if (txt == "invalid url") {
+    console.log(txt);
+    /*if (txt == "invalid url") {
       window.location.href = "http://bonn.pw/s";
     } else {
       window.location.href = txt;
-    }
+    }*/
   };
   ajax.open("GET", url, true);
   ajax.send();
