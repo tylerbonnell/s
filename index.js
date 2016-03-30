@@ -13,6 +13,7 @@ function shorten(e) {
 function getFromServer() {
   var url = "http://sphp-tylerbonnell.rhcloud.com/?url=" + encodeURIComponent($("input").value);
   var ajax = new XMLHttpRequest();
+  $("shortened").innerHTML = "";
   ajax.onload = function() {
     $("shortened").style.display = "";
     $("shortened").innerHTML = this.responseText;
